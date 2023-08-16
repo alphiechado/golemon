@@ -1,13 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  padding:0;
+  background-color:#ffffff;
+  height: 100%;
+  width: 100%;
+  box-sizing:border-box;
+}
+.App {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;}
+.navigation {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #000080;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
 }
+
+.hamburger:hover {
+  background-color: #000080;
+}
+
+nav {
+  text-decoration: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+nav h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  color: #000080;
+}
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+a:hover{
+  color: #000080;
+  transition: .3s;
+}
+button{
+  border: none;
+  background: #000080;
+  padding: 12px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+  text-decoration: none;
+}
+button:hover{
+  color: #000000;
+  transition: .3s;
+}
+.NavButton1{
+  background: #000080;
+  border-style: solid;
+  border-color: #000080;
+  padding: 12px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+  text-decoration: none;
+  margin-left: 500px;
+  margin-right: 20px;
+  
+}
+/* Signin */
+.SignIn1{
+  width: 500px;
+  height: 600px;
+  background: #ffffff;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 10px;
+  background-color: #000080;
+}
+.Signinheader{
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000080;
+  text-align: center;
+  margin-top: 40px;
+}
+.inputParent{
+  margin-top: 80px;
+}
+.input{
+  width: 60%;
+	height: 20px;
+	background: #ffffff;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.Signinbutton{
+  margin-left: 0px;
+  background-color: #ffffff;
+  color: #000080;
+}
+.Signinbutton:hover{
+  color: #000000;
+  transition: .3s;
+}
+.Signinlink{
+  color: #ffffff;
+}
+.Signinpara{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.Signinpara1{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.Signinlink:hover{
+  color: #000000;
+}
+/* profile */
+
+.Profile{
+  display: flex;
+  padding-top: 100px;
+}
+.Profileimage{
+  width: 657px;
+  height: 413px;
+  margin-right: 120px;
+  margin-top: 40px;
+
+}
+.Profileheader{
+  font-family: 'Raleway', sans-serif;
+  font-size: 120px;
+  margin-left: 120px;
+  margin-top: 40px;
+  text-align: left;
+  color: #000080;
+  
+}
+.Profileheader2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  margin-left: 140px;
+  margin-top: -100px;
+  text-align: left;
+  color: #4d4d4d;
+}
+.Profilepara{
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: left;
+  color: #4d4d4d;
+  margin-left: 140px;
+  margin-top: -20px;
+};
+/* Media Query */
+@media screen and (max-width: 768px){
+  .hamburger {
+    display: block;
+  }
+  .navLinks{
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: unset !important;
+    row-gap: 20px;
+    padding: 70px 16px 50px;
+    transition: all 500ms;
+    filter: drop-shadow(2px 2px 2px #000080);
+  }
+  .NavButton1{
+    background: #ffffff;
+    border-style: solid;
+    border-color: #000080;
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: #000080;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+    text-decoration: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .show-menu{
+    transform: translate(0px, 0);
+  }
+  .hide-menu{
+    transform: translate(-250px, 0);
+  }
+  .SignIn1{
+    width: 100%;
+    height: 50vh;
+    background: #ffffff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #000080;
+  }
+  .Signinheader{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000080;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .inputParent{
+    margin-top: 60px;
+  }
+  .input{
+    width: 60%;
+    height: 20px;
+    background: #ffffff;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .Signinbutton{
+    margin-left: 0px;
+    background-color: #ffffff;
+    color: #000080;
+  }
+  .Signinbutton:hover{
+    color: #000000;
+    transition: .3s;
+  }
+  .Signinlink{
+    color: #ffffff;
+  }
+  .Signinpara{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+  }
+  .Signinpara1{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+  }
+  .Signinlink:hover{
+    color: #000000;
+  }
+  .Profile{
+    display: inline !important;
+    padding-top: 100px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .Profileimage{
+    width: 90%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 40px;
+    justify-content: center;
+  
+  }
+  .Profileheader{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15vw;
+    margin: 0;
+    text-align: center;
+    color: #000080;
+    margin-top: 75px;
+    line-height: 58px;
+  }
+  .Profileheader2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 9vw;
+    margin-left: 0px;
+    margin-top: 20px;
+    text-align: center;
+    color: #4d4d4d;
+  }
+  .Profilepara{
+    font-size: 4vw;
+    text-align: center;
+    color: #4d4d4d;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+  
