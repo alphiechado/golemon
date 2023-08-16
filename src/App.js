@@ -56,7 +56,7 @@ function App() {
         </nav>
         <ErrorBoundary>
           <Routes>
-            <Route path="/SignIn" element={<SignIn />} />
+            <Route path="/" element={<SignIn />} />
             <Route
               path="/SignIn"
               element={
